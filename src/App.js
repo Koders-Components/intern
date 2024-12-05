@@ -2,6 +2,7 @@ import './App.css';
 import Comancop from './Compo/Comancop';
 import Header from './Compo/Header';
 import Card from './Compo/Card';
+import Payment from './Compo/Payment';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
         <Route path="/Services" element={<Comancop/>} />
         <Route path="/Portfolio" element={<Comancop/>} />
         <Route path="/Blog" element={<Card/>} />
-        <Route path="/Contects" element={<Comancop/>} />
+        <Route path="/Contects" element={<Payment/>} />
       </Routes>
     </BrowserRouter>
   );
