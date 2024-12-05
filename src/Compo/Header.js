@@ -11,7 +11,6 @@ import Bag from './Bag.jpg';
 import Search from './Search.jpg';
 import Dropdownlogo from './Dropdownlogo.jpg';
 import { Link } from 'react-router-dom';
-
 import './Mix.css';
 
 export default function Header() {
@@ -44,11 +43,11 @@ export default function Header() {
         <div className='headlineimg'><img src={Logo} className='Logoimg' alt='media'/></div>
         <div className='headline'>
           <div className='head'><Link className='head' to='/Home'>HOME</Link></div>
-          <div className='head'><Link className='head' to='/Pages'>PAGES</Link></div>
+          <div className='head'><Link className='head' to='/Testimonials'>TESTIMONIALS</Link></div>
           <div className='head'><Link className='head' to='/Services'>SERVICES</Link></div>
           <div className='head'><Link className='head' to='/Portfolio'>PORTFOLIO</Link></div>
-          <div className='head'><Link className='head' to='/Blog'>BLOG</Link></div>
-          <div className='head'><Link className='head' to='/Contects'>CONTECTS</Link></div>
+          <div className='head'><Link className='head' to='/Card'>CARD</Link></div>
+          <div className='head'><Link className='head' to='/Payment'>PAYMENT</Link></div>
         </div>
       </div>
       <div className='secondline-right'>
