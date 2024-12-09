@@ -1,17 +1,14 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    color: #fff;
-    text-align: center;
-  }
-  
   .cosmic-container {
     background-image: url('G:\Intern\header\public\assets\images\cosmicimg.jpg');
     padding-top: 64px;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 25px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
   }
   
   .cosmic-container .header-title {

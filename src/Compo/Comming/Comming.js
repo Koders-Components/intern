@@ -4,8 +4,7 @@ import "./Comming.css";
 const ComingSoon = () => {
   const calculateTimeLeft = () => {
     const now = new Date();
-    const eventDate = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 10, 59, 59).getTime();
-    // Set event time to 11:59 PM today
+    const eventDate = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 18, 59, 59).getTime();
     const currentTime = now.getTime();
     const difference = eventDate - currentTime;
 
@@ -52,7 +51,7 @@ const ComingSoon = () => {
               </div>
             </>
           ) : (
-            <p>The wait is over!</p>
+            <p>Hii this kheni harshil and my working time is over now!</p>
           )}
         </div>
       </div>

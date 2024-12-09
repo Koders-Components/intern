@@ -48,6 +48,7 @@ export default function Header() {
           <div className='head'><Link className='head' to='/Portfolio'>PORTFOLIO</Link></div>
           <div className='head'><Link className='head' to='/Card'>CARD</Link></div>
           <div className='head'><Link className='head' to='/Payment'>PAYMENT</Link></div>
+          <div className='head'><Link className='head' to='/Createuser'>Account</Link></div>
         </div>
       </div>
       <div className='secondline-right'>
