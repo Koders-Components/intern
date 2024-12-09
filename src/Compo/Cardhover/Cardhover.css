@@ -1,0 +1,98 @@
+  .containerhover {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Header */
+  .containerhover .header-title {
+    font-size: 2em;
+    color: burlywood;
+    margin-bottom: 10px;
+  }
+  
+  .containerhover .header-description {
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 30px;
+  }
+  
+  /* Card Container */
+  .containerhover .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  /* Individual Card */
+  .containerhover .card_dtl {
+    position: relative;
+    overflow: hidden;
+    flex: 1 1 calc(30% - 20px); /* Adjusts width dynamically */
+    max-width: 300px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .containerhover .card_dtl:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Card Background */
+  .containerhover .card-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.4);
+    z-index: 0;
+    transition: transform 0.5s ease, filter 0.3s ease;
+  }
+  
+  .containerhover .card_dtl:hover .card-bg {
+    transform: scale(1.2);
+    filter: brightness(1);
+  }
+  
+  /* Card Content */
+  .containerhover .card-content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .containerhover .card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: burlywood;
+  }
+  
+  .containerhover .card-description {
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1024px) {
+    .containerhover .card-container {
+      gap: 15px;
+    }
+    .containerhover .card_dtl {
+      flex: 1 1 calc(45% - 15px); /* Wider cards for smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .containerhover .card_dtl {
+      flex: 1 1 calc(100% - 20px); /* Full-width cards for small screens */
+    }
+  }
+  
